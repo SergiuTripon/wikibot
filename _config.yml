@@ -1,0 +1,16 @@
+# general
+title: WikiBot
+author: Sergiu Tripon
+description: ""
+timezone: Europe/London
+
+# urls
+url: "http://sergiu-tripon.com"
+baseurl: "/wikibot"
+
+# exclude
+exclude:
+- node_modules
+- Gruntfile.js
+- package.json
+- README.md

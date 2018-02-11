@@ -1,0 +1,93 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+#brand {
+  span {
+    font-size: 1.1rem;
+    margin-left: -8px;
+  }
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.tooltip.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: #dc3545;
+}
+
+#question-block {
+  #question-icon svg {
+    margin-top: 2px;
+    font-size: 2.1rem;
+  }
+  #question-text {
+    font-size: 0.9rem;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    background: #fff;
+    &:after,
+    &:before {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: transparent #fff transparent transparent;
+      border-width: 10px;
+      margin-top: -10px;
+    }
+    &:before {
+      border-color: transparent rgba(0,0,0,.15) transparent transparent;
+      border-width: 11px;
+      margin-top: -11px;
+    }
+  }
+}
+
+#answer-block {
+  #answer-icon svg {
+    margin-top: 2px;
+    font-size: 2.1rem;
+  }
+  #answer-text {
+    font-size: 0.9rem;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    background: #fff;
+    &:after,
+    &:before {
+      left: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:after {
+      border-color: transparent transparent transparent  #fff;
+      border-width: 10px;
+      margin-top: -10px;
+    }
+    &:before {
+      border-color: transparent transparent transparent rgba(0,0,0,.15);
+      border-width: 11px;
+      margin-top: -11px;
+    }
+  }
+}
+
+.card-footer .form-group {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 992px) {
+  .card-footer .form-group {
+    margin-bottom: 0;
+  }
+}
